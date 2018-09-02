@@ -209,6 +209,9 @@
 
 
             <div class="profile5" id="profile5" style="display:none;">
+                55555
+            </div>
+            <div class="profile6" id="profile6" style="display:none;">
                 <p>HTML5 tag</p>
                 <ul>
                     <li>aside</li>
@@ -254,6 +257,9 @@
         toggle_block("profile1")
         toggle_none("profile2")
         toggle_none("profile3")
+        toggle_none("profile4")
+        toggle_none("profile5")
+        toggle_none("profile6")
     }
 
 
@@ -261,14 +267,47 @@
         toggle_none("profile1")
         toggle_block("profile2")
         toggle_none("profile3")
+        toggle_none("profile4")
+        toggle_none("profile5")
+        toggle_none("profile6")
     }
 
     function callProfile3() {
         toggle_none("profile1")
         toggle_none("profile2")
         toggle_block("profile3")
+        toggle_none("profile4")
+        toggle_none("profile5")
+        toggle_none("profile6")
     }
 
+    function callProfile4() {
+        toggle_none("profile1")
+        toggle_none("profile2")
+        toggle_none("profile3")
+        toggle_block("profile4")
+        toggle_none("profile5")
+        toggle_none("profile6")
+    }
+
+    function callProfile5() {
+        toggle_none("profile1")
+        toggle_none("profile2")
+        toggle_none("profile3")
+        toggle_none("profile4")
+        toggle_block("profile5")
+        toggle_none("profile6")
+    } 
+
+    function callProfile6() {
+        toggle_none("profile1")
+        toggle_none("profile2")
+        toggle_none("profile3")
+        toggle_none("profile4")
+        toggle_none("profile5")
+        toggle_block("profile6")
+    } 
+    
     function toggle_visibility(id) {
         var e = document.getElementById(id);
         e.style.display = ((e.style.display != 'none') ? 'none' : 'block');
