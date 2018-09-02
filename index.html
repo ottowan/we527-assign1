@@ -107,16 +107,29 @@
             border: 0;
         }
 
-        progress.xp {
+        progress.left_side {
             -webkit-appearance: none;
             appearance: none;
         }
 
-        progress.xp::-webkit-progress-value {
-            background:#1E8449;
+        progress.left_side::-webkit-progress-value {
+            background: #f4af41;
         }
 
-        progress.xp::-webkit-progress-bar {
+        progress.left_side::-webkit-progress-bar {
+            background: #E9EAEC;
+        }
+
+        progress.right_side {
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        progress.right_side::-webkit-progress-value {
+            background: #76f441;
+        }
+
+        progress.right_side::-webkit-progress-bar {
             background: #E9EAEC;
         }
 
@@ -163,70 +176,135 @@
                 </div>
             </div>
             <div class="profile2" id="profile2" style="display:none;">
-                <h1 class="entry-title">How to make rounded images with CSS</h1>
-                <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan
-                    area of over 13 million inhabitants.</p>
-                <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going
-                    back to its founding by the Romans, who named it Londinium.</p>
+
+                <div class="animated slideInDown">
+                    <h1>[ประวัติส่วนตัว]</h1>
+                </div>
+                <div class="animated slideInDown">
+                    <p><b>ชื่อ : </b>ปริญญา บำรุงชู</p>
+                </div>
+
+                <div class="animated slideInDown">
+                    <p><b>วันเกิด : </b>24 กุมภาพันธ์ 2527</p>
+
+                </div>
+                <div class="animated slideInDown">
+                    <p><b>ที่อยู่ : </b>12 ม.5 ต.แม่ลาว อ.เชียงคำ จ.พะเยา</p>
+                </div>
+
+                <div class="animated slideInDown">
+                    <p><b>ที่ทำงาน : </b>สำนักเทคโนโลยีสารสนเทศ สำนักงานศาลยุติธรรม</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ชั้น
+                        4 อาคารศาลอาญา แขวงจอมพล เขตจตุจักร กทม.</p>
+                </div>
             </div>
 
             <div class="profile3" id="profile3" style="display:none;">
-                <div style="float:left; padding:20px">
+                <div class="animated slideInLeft" style="float:left; padding:20px">
                     <p><b>Front-end</b></p>
                     <p>CSS 40%</p>
-                    <progress class="xp" value="40" max="100"></progress>
+                    <progress class="left_side" value="40" max="100"></progress>
                     <p>boostrap 50%</p>
-                    <progress class="xp" value="50" max="100"></progress>
+                    <progress class="left_side" value="50" max="100"></progress>
                     <p>html5 30%</p>
-                    <progress class="xp" value="70" max="100"></progress>
+                    <progress class="left_side" value="70" max="100"></progress>
                     <p>JQuery 70%</p>
-                    <progress class="xp" value="70" max="100"></progress>
+                    <progress class="left_side" value="70" max="100"></progress>
                     <p>JavaScript 70%</p>
-                    <progress class="xp" value="70" max="100"></progress>
+                    <progress class="left_side" value="70" max="100"></progress>
                 </div>
-                <div style="float:left; padding:20px animated fadeinleft">
+                <div class="animated fadeIn" style="float:left; padding:20px; ">
                     <p><b>Back-end</b></p>
                     <p>NodeJS 90%</p>
-                    <progress class="xp" value="80" max="100"></progress>
+                    <progress class="center_side" value="80" max="100"></progress>
                     <p>PHP 80%</p>
-                    <progress class="xp" value="80" max="100"></progress>
+                    <progress class="center_side" value="80" max="100"></progress>
                     <p>Golang 60%</p>
-                    <progress class="xp" value="60" max="100"></progress>
+                    <progress class="center_side" value="60" max="100"></progress>
                     <p>Python 30%</p>
-                    <progress class="xp" value="70" max="100"></progress>
+                    <progress class="center_side" value="70" max="100"></progress>
                     <p>React 30%</p>
-                    <progress class="xp" value="30" max="100"></progress>
+                    <progress class="center_side" value="30" max="100"></progress>
                     <p>React Native 30%</p>
-                    <progress class="xp" value="30" max="100"></progress>
+                    <progress class="center_side" value="30" max="100"></progress>
                 </div>
-                <div style="float:left; padding:20px">
 
+                <div class="animated slideInRight" style="float:left; padding:20px">
                     <p><b>Database</b></p>
                     <p>MySQL 60%</p>
-                    <progress class="xp" value="60" max="100"></progress>
+                    <progress class="right_side" value="60" max="100"></progress>
                     <p>MongoDB 40%</p>
-                    <progress class="xp" value="40" max="100"></progress>
+                    <progress class="right_side" value="40" max="100"></progress>
                 </div>
 
-                
-
-
-
             </div>
-
             <div class="profile4" id="profile4" style="display:none;">
-                44444
 
+                <div class="animated flipInX">
+                    <h1>[ประวัติการศึกษา]</h1>
+                </div>
+                <div class="animated slideInLeft">
+                    <p><b>ระดับประถมศึกษา</b></p>
+                    <ul>
+                        <li>โรงเรียนปิยมิตรวิทยา</li>
+                        <li>อ.เชียงคำ จ.พะเยา</li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="animated slideInRight">
+                    <p><b>ระดับมัธยมศึกษา</b></p>
+                    <ul>
+                        <li>โรงเรียนเชียงคำวิทยาคม</li>
+                        <li>อ.เชียงคำ จ.พะเยา</li>
+                    </ul>
+                    <hr>
+                </div>
+
+                <div class="animated slideInLeft">
+                    <p><b>ระดับปริญญาตรี</b></p>
+                    <ul>
+                        <li>มหาวิทยาลัยสงขลานครินทร์</li>
+                        <li>คณะ : วิศวกรรมศาสตร์</li>
+                        <li>สาขา : วิศวกรรมคอมพิวเตอร์</li>
+                    </ul>
+                    <hr>
+                </div>
             </div>
-
 
             <div class="profile5" id="profile5" style="display:none;">
-                55555
+
+                <div class="animated flipInX">
+                    <h1>[ประวัติการทำงาน]</h1>
+                </div>
+                <div class="animated slideInUp">
+
+                    <p><b>บริษัท ภูเก็ต อินโนวา จำกัด (2550-2557)</b></p>
+                    <ul>
+                        <li>ตำแหน่ง : Developer</li>
+                    </ul>
+                    <hr>
+                </div>
+
+                <div class="animated slideInUp">
+                    <p><b>Chamroen Rubber พะเยา(2557-2559)</b></p>
+                    <ul>
+                        <li>ตำแหน่ง : System Analyst&Developer</li>
+                    </ul>
+                    <hr>
+                </div>
+
+                <div class="animated slideInUp">
+                    <p><b>สำนักงานศาลยุติธรรม กทม.(2559-ปัจจุบัน)</b></p>
+                    <ul>
+                        <li>ตำแหน่ง : นักวิชาการคอมพิวเตอร์ ปฏิบัติการ</li>
+                        <li>ส่วน : ระบบงาน (Fullstack Developer)</li>
+                    </ul>
+
+                    <hr>
+                </div>
             </div>
             <div class="profile6" id="profile6" style="display:none;">
-                <p>ใส่รูปของตนเอง ชื่อจริง ชื่อเล่น ประวัติการศึกษา ประวัติการท างาน งานอดิเรก และข้อมูลอื่นๆที่ต้องการ</p>
-
-                <p>HTML5 tag</p>
+                <p><b>HTML5 tag</b></p>
                 <ul>
                     <li>aside</li>
                     <li>nav</li>
@@ -235,14 +313,32 @@
                     <li>progress</li>
                 </ul>
                 <hr>
-                <p>CSS tag</p>
+                <p><b>CSS tag</b></p>
                 <ul>
                     <li>box-sizing : บังคับให้ขนาดของ div</li>
-                    <li>border-radius : วาดวงกลม</li>
+                    <li>border-radius : วาดขอบวงกลม</li>
                     <li>width : กำหนดความกว้าง</li>
                     <li>height : กำหนดความสูง</li>
-                    <li>article</li>
-                    <li>progress</li>
+                    <li>list-style-type : กำหนดให้ li ไม่แสดงจุด</li>
+                    <li>border-left : set ค่าขอบด้านซ้าย</li>
+                    <li>background-image : set imge background</li>
+                    background-repeat
+                    <li>font-size : ขนาดตัวอักษร</li>
+                    <li>line-height : ความสูงของบรรทัด</li>
+                    <li>padding : รายะขอบ</li>
+                    <li>border-top : set ค่าขอบด้านขวา</li>
+                    <li>text-align: center จัดกลางข้อความ</li>
+                    <li>position ตำแหน่ง</li>
+                    <li>font-weight ความหนาของตัวอักษร</li>
+                    <li>background-color สีพื้นหลัง</li>
+                    <li> border : ขอบ</li>
+                    <li>text-transform: uppercase : แปลงตัวอักษรทั้งหมดในแต่ละคำเป็นตัวพิมพ์ใหญ่</li>
+
+                </ul>
+                <hr>
+                <p><b>CSS libray</b></p>
+                <ul>
+                    <li>animate.css</li>
                 </ul>
             </div>
         </article>
@@ -316,10 +412,6 @@
         toggle_block("profile6")
     }
 
-    function toggle_visibility(id) {
-        var e = document.getElementById(id);
-        e.style.display = ((e.style.display != 'none') ? 'none' : 'block');
-    }
 
     function toggle_block(id) {
         var e = document.getElementById(id);
@@ -328,6 +420,7 @@
 
     function toggle_none(id) {
         var e = document.getElementById(id);
+        e.style.css
         e.style.display = 'none';
     }
 </script>
