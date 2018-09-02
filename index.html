@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./animate.css">
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        nav {
+            float: left;
+            padding: 20px;
+            width: 20%;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 80%;
+            height: auto;
+            border-left: solid 1px #E9EAEC;
+        }
+
+        /* Clear floats after the columns */
+        section:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+        .site-footer {
+            font-size: 0.875rem;
+            line-height: 1.375rem;
+            padding: 30px 0 30px 0;
+            border-top: solid 1px #E9EAEC;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .avatar {
+            border-radius: 50%;
+            width: 150px;
+            height: auto;
+        }
+
+        .li_avatar {
+            padding-bottom: 20px;
+        }
+
+        .text-center li {
+            padding-top: 10px;
+        }
+
+        .profile1 {
+            height: 710px;
+            width: 100%;
+            background-image: url("images/p3.png")
+        }
+
+        .text-overimage {
+            position: relative;
+            text-align: center;
+            color: black;
+        }
+
+        .top-left {
+            position: absolute;
+            top: 20px;
+            left: 16px;
+        }
+
+        .slider-text-inner h1 {
+            margin-bottom: 20px;
+            font-size: 60px;
+            line-height: 1.3;
+            font-weight: 700;
+
+            text-align: left;
+        }
+
+        .text-logo {
+            text-align: right;
+            font-weight: 700;
+            font-size: 22px;
+            margin-bottom: .2em;
+            display: block;
+            width: 100%;
+        }
+
+        .text-position {
+            display: block;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        hr {
+            background-color: #E9EAEC;
+            height: 1px;
+            border: 0;
+        }
+
+        progress.xp {
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        progress.xp::-webkit-progress-value {
+            background: red;
+        }
+
+        progress.xp::-webkit-progress-bar {
+            background: #E9EAEC;
+        }
+
+        .profile1 .profile2 .profile3 {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <aside>
+
+        <nav>
+            <ul class="text-center">
+                <li class="li_avatar"><img class="avatar" src="./images/p2.jpg" alt="Avatar"></li>
+                <li class="text-logo"><b>Parinya Bumrungchoo</b></li>
+                <li class="text-position">DEVELOPER IN COURT OF JUSTICE
+
+                </li>
+                <hr>
+                <li>
+                    <a href="#profile1" id="link1" onclick="callProfile1()">Home</a>
+                </li>
+                <li><a href="#profile2" id="link2" onclick="callProfile2()">About</a></li>
+                <li><a href="#profile3" id="link3" onclick="callProfile3()">Skills</a></li>
+                <li><a href="#" id="link4">Education</a></li>
+            </ul>
+        </nav>
+
+
+    </aside>
+
+    <section>
+        <article>
+            <div id="profile1" class="profile1 text-overimage animated fadeIn delay-1s">
+                <div class="top-left">
+                    <div class="top-left slider-text-inner animated fadeInUp delay-1s">
+                        <h1>"I am <br>a Developer"</h1>
+                        <h2>100% Full Stack Developer</h2>
+                        <p><a class="btn btn-primary btn-learn">View Portfolio <i class="icon-briefcase3"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="profile2" id="profile2" style="display:none;">
+                <h1 class="entry-title">How to make rounded images with CSS</h1>
+                <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan
+                    area of over 13 million inhabitants.</p>
+                <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going
+                    back to its founding by the Romans, who named it Londinium.</p>
+            </div>
+
+            <div class="profile3" id="profile3" style="display:none;">
+                <p>NodeJS 90%</p>
+                <progress class="xp" value="80" max="100"></progress>
+                <p>PHP 80%</p>
+                <progress class="xp" value="80" max="100"></progress>
+                <p>Golang 60%</p>
+                <progress class="xp" value="60" max="100"></progress>
+                <p>MySQL 60%</p>
+                <progress class="xp" value="60" max="100"></progress>
+                <p>CSS 60%</p>
+                <progress class="xp" value="60" max="100"></progress>
+                <p>boostrap 70%</p>
+                <progress class="xp" value="70" max="100"></progress>
+                <p>Python 30%</p>
+                <progress class="xp" value="70" max="100"></progress>
+                <p>React 30%</p>
+                <progress class="xp" value="30" max="100"></progress>
+                <p>React Native 30%</p>
+                <progress class="xp" value="30" max="100"></progress>
+
+            </div>
+
+
+
+        </article>
+    </section>
+
+    <footer id="colophon" class="site-footer">
+        <div class="body-width clearfix" style="text-align: center;">
+            <p>
+                Powered by <a href="#">Parinya</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+
+<script>
+    // document.addEventListener('DOMContentLoaded', function () {
+    //     // your code goes here
+    //     document.getElementById("profile2").style.visibility = "hidden"
+    //     document.getElementById("profile3").style.visibility = "hidden"
+    // }, false);
+
+    //document.getElementById("profile3").addEventListener("click", callProfile);
+
+    function callProfile1() {
+        toggle_block("profile1")
+        toggle_none("profile2")
+        toggle_none("profile3")
+    }
+
+
+    function callProfile2() {
+        toggle_none("profile1")
+        toggle_block("profile2")
+        toggle_none("profile3")
+    }
+
+    function callProfile3() {
+        toggle_none("profile1")
+        toggle_none("profile2")
+        toggle_block("profile3")
+    }
+
+    function toggle_visibility(id) {
+        var e = document.getElementById(id);
+        e.style.display = ((e.style.display != 'none') ? 'none' : 'block');
+    }
+
+    function toggle_block(id) {
+        var e = document.getElementById(id);
+        e.style.display = 'block';
+    }
+
+    function toggle_none(id) {
+        var e = document.getElementById(id);
+        e.style.display = 'none';
+    }
+</script>
+
+</html>
