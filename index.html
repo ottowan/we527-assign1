@@ -92,17 +92,7 @@
             font-size: 60px;
             line-height: 1.3;
             font-weight: 700;
-
             text-align: left;
-        }
-
-        .text-logo {
-            text-align: right;
-            font-weight: 700;
-            font-size: 22px;
-            margin-bottom: .2em;
-            display: block;
-            width: 100%;
         }
 
         .text-position {
@@ -123,7 +113,7 @@
         }
 
         progress.xp::-webkit-progress-value {
-            background: red;
+            background:#1E8449;
         }
 
         progress.xp::-webkit-progress-bar {
@@ -152,9 +142,9 @@
                 </li>
                 <li><a href="#profile2" id="link2" onclick="callProfile2()">About</a></li>
                 <li><a href="#profile3" id="link3" onclick="callProfile3()">Skills</a></li>
-                <li><a href="#profile4" id="link4">Education</a></li>
-                <li><a href="#profile5" id="link5">work</a></li>
-                <li><a href="#profile6" id="link6">html5&css ที่ใช้</a></li>
+                <li><a href="#profile4" id="link4" onclick="callProfile4()">Education</a></li>
+                <li><a href="#profile5" id="link5" onclick="callProfile5()">work</a></li>
+                <li><a href="#profile6" id="link6" onclick="callProfile6()">html5&CSS3 ที่ใช้</a></li>
             </ul>
         </nav>
 
@@ -181,24 +171,46 @@
             </div>
 
             <div class="profile3" id="profile3" style="display:none;">
-                <p>NodeJS 90%</p>
-                <progress class="xp" value="80" max="100"></progress>
-                <p>PHP 80%</p>
-                <progress class="xp" value="80" max="100"></progress>
-                <p>Golang 60%</p>
-                <progress class="xp" value="60" max="100"></progress>
-                <p>MySQL 60%</p>
-                <progress class="xp" value="60" max="100"></progress>
-                <p>CSS 60%</p>
-                <progress class="xp" value="60" max="100"></progress>
-                <p>boostrap 70%</p>
-                <progress class="xp" value="70" max="100"></progress>
-                <p>Python 30%</p>
-                <progress class="xp" value="70" max="100"></progress>
-                <p>React 30%</p>
-                <progress class="xp" value="30" max="100"></progress>
-                <p>React Native 30%</p>
-                <progress class="xp" value="30" max="100"></progress>
+                <div style="float:left; padding:20px">
+                    <p><b>Front-end</b></p>
+                    <p>CSS 40%</p>
+                    <progress class="xp" value="40" max="100"></progress>
+                    <p>boostrap 50%</p>
+                    <progress class="xp" value="50" max="100"></progress>
+                    <p>html5 30%</p>
+                    <progress class="xp" value="70" max="100"></progress>
+                    <p>JQuery 70%</p>
+                    <progress class="xp" value="70" max="100"></progress>
+                    <p>JavaScript 70%</p>
+                    <progress class="xp" value="70" max="100"></progress>
+                </div>
+                <div style="float:left; padding:20px animated fadeinleft">
+                    <p><b>Back-end</b></p>
+                    <p>NodeJS 90%</p>
+                    <progress class="xp" value="80" max="100"></progress>
+                    <p>PHP 80%</p>
+                    <progress class="xp" value="80" max="100"></progress>
+                    <p>Golang 60%</p>
+                    <progress class="xp" value="60" max="100"></progress>
+                    <p>Python 30%</p>
+                    <progress class="xp" value="70" max="100"></progress>
+                    <p>React 30%</p>
+                    <progress class="xp" value="30" max="100"></progress>
+                    <p>React Native 30%</p>
+                    <progress class="xp" value="30" max="100"></progress>
+                </div>
+                <div style="float:left; padding:20px">
+
+                    <p><b>Database</b></p>
+                    <p>MySQL 60%</p>
+                    <progress class="xp" value="60" max="100"></progress>
+                    <p>MongoDB 40%</p>
+                    <progress class="xp" value="40" max="100"></progress>
+                </div>
+
+                
+
+
 
             </div>
 
@@ -212,6 +224,8 @@
                 55555
             </div>
             <div class="profile6" id="profile6" style="display:none;">
+                <p>ใส่รูปของตนเอง ชื่อจริง ชื่อเล่น ประวัติการศึกษา ประวัติการท างาน งานอดิเรก และข้อมูลอื่นๆที่ต้องการ</p>
+
                 <p>HTML5 tag</p>
                 <ul>
                     <li>aside</li>
@@ -220,6 +234,7 @@
                     <li>article</li>
                     <li>progress</li>
                 </ul>
+                <hr>
                 <p>CSS tag</p>
                 <ul>
                     <li>box-sizing : บังคับให้ขนาดของ div</li>
@@ -245,13 +260,6 @@
 
 
 <script>
-    // document.addEventListener('DOMContentLoaded', function () {
-    //     // your code goes here
-    //     document.getElementById("profile2").style.visibility = "hidden"
-    //     document.getElementById("profile3").style.visibility = "hidden"
-    // }, false);
-
-    //document.getElementById("profile3").addEventListener("click", callProfile);
 
     function callProfile1() {
         toggle_block("profile1")
@@ -297,7 +305,7 @@
         toggle_none("profile4")
         toggle_block("profile5")
         toggle_none("profile6")
-    } 
+    }
 
     function callProfile6() {
         toggle_none("profile1")
@@ -306,8 +314,8 @@
         toggle_none("profile4")
         toggle_none("profile5")
         toggle_block("profile6")
-    } 
-    
+    }
+
     function toggle_visibility(id) {
         var e = document.getElementById(id);
         e.style.display = ((e.style.display != 'none') ? 'none' : 'block');
